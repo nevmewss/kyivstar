@@ -3748,6 +3748,11 @@
                     slidesPerView: 2,
                     spaceBetween: -100,
                     autoHeight: true
+                },
+                769: {
+                    slidesPerView: 2,
+                    spaceBetween: -20,
+                    autoHeight: true
                 }
             },
             on: {}
