@@ -579,8 +579,10 @@ body::after {
   display: flex;
   flex-direction: column
 }
-.tariffs__block:not(:first-child) {
-  padding-top: 1.25rem
+@media(min-width:1600px) {
+  .tariffs__block:not(:first-child) {
+    padding-top: 1.25rem
+  }
 }
 .tariffs__block:not(:last-child) {
   padding-bottom: 1.25rem;
@@ -665,7 +667,8 @@ body::after {
   display: flex;
   gap: .625rem;
   flex-wrap: wrap;
-  flex-direction: column
+  flex-direction: column;
+  align-items: start
 }
 .tariffs__subpower {
   font-weight: 700
@@ -823,8 +826,7 @@ body::after {
   }
 }
 .tariffs__banner-low img {
-  width: 40.625rem;
-  height: 34.375rem
+  height: 31.25rem
 }
 @media(min-width:1600px) {
   .tariffs__banner-low {
