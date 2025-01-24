@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <!-- <style>body{opacity: 0;}</style> -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20250120191430" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20250124113126" />
     <link rel="shortcut icon" href="favicon.ico" />
     <!-- <meta name="robots" content="noindex, nofollow"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,15 +13,15 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header data-goto-header class="header">
         <div class="header__container">
           <div class="header__top">
             <div class="header__lic">Офіційний представник</div>
             <a href="tel:+380000000000" class="header__tel">+380 00 000 0000</a>
           </div>
           <div class="header__bottom">
-            <div class="header__banner"><img src="img/header/banner.png" alt="Banner" /></div>
-            <div class="header__logo"><img src="img/header/logo.png" alt="Banner" /></div>
+            <div class="header__banner"><img src="@img/header/banner.png" alt="Banner" /></div>
+            <div class="header__logo"><img src="@img/header/logo.png" alt="Banner" /></div>
           </div>
         </div>
       </header>
@@ -35,21 +35,41 @@
                 <div class="tariffs__item">
                   <div class="tariffs__block">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/tv.png" alt="TV" /></div>
-                      <div class="tariffs__text">Київстар ТБ</div>
-                    </div>
-                    <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/int.png" alt="TV" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
                       <div class="tariffs__texts">
                         <div class="tariffs__text">Домашній інтернет</div>
                         <div class="tariffs__text"><span>до</span> 100 Мбіт/с</div>
                         <div class="tariffs__text">Безлім <span>трафік</span></div>
                       </div>
                     </div>
+                    <div class="tariffs__feature">
+                      <div class="tariffs__img"><img src="@img/tariffs/tv.png" alt="TV" /></div>
+                      <div class="tariffs__tv">
+                        <div class="tariffs__text">Київстар ТБ</div>
+                        <div class="tariffs__dop">
+                          18 000+ фільмів, серіалів, шоу та 380+ каналів. Дивіться будь-де на 5 пристроях одночасно, без
+                          плати за трафік на смартфоні. Контент від Universal, Disney, Paramount та інших.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="tariffs__block">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/card.png" alt="Card" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
+                      <div class="tariffs__texts">
+                        <div class="tariffs__text">Корисні функції</div>
+                        <div class="tariffs__subtext">
+                          Тиждень довіри від Київстар – ваш вихід, якщо пропустили оплату. Активуйте послугу та
+                          користуйтеся інтернетом, Київстар ТБ, дзвінками та 100 МБ мобільного інтернету щодня. Домашній
+                          день – інтернет на добу за 25 грн. Послуга активна до кінця наступної доби, щоб ви залишалися
+                          онлайн, коли треба. Переїжджаєте? Київстар збереже всі послуги. Будьте на зв’язку з Київстар!
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs__block block-fbga">
+                    <div class="tariffs__feature">
+                      <div class="tariffs__img"><img src="@img/tariffs/card.png" alt="Card" /></div>
                       <div class="tariffs__info">
                         <div class="tariffs__cost"><span>200</span> 100 грн/міс.</div>
                         <div class="tariffs__deadline">протягом перших 6 місяців</div>
@@ -57,7 +77,7 @@
                     </div>
                   </div>
                   <div class="tariffs__block">
-                    <a href="#" class="tariffs__btn">Обрати</a>
+                    <a data-popup="#luck" href="#" class="tariffs__btn">Обрати</a>
                   </div>
                 </div>
               </div>
@@ -66,7 +86,7 @@
                 <div class="tariffs__item">
                   <div class="tariffs__block">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/int.png" alt="TV" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
                       <div class="tariffs__texts">
                         <div class="tariffs__text">Домашній інтернет</div>
                         <div class="tariffs__text"><span>до</span> 1 Гбіт/с</div>
@@ -76,16 +96,32 @@
                   </div>
                   <div class="tariffs__block">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img-power"><img src="img/tariffs/superpower.png" alt="superpower" /></div>
+                      <div class="tariffs__img-power"><img src="@img/tariffs/superpower.png" alt="superpower" /></div>
                       <div class="tariffs__text">
                         <div class="tariffs__power">Київстар ТБ</div>
+                        <div class="tariffs__subtext-power">
+                          18 000+ фільмів, серіалів, шоу, мультфілмів та 380+ каналів. Дивіться будь-де на 5 пристроях
+                          одночасно, без плати за трафік на смартфоні. Контент від Universal, Disney, Paramount та
+                          інших.
+                        </div>
                         <div class="tariffs__subpower">1 суперсила на вибір без додаткової плати</div>
                       </div>
                     </div>
-                  </div>
-                  <div class="tariffs__block">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/card.png" alt="Card" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
+                      <div class="tariffs__texts">
+                        <div class="tariffs__text">Корисні функції</div>
+                        <div class="tariffs__subtext">
+                          Тиждень довіри від Київстар – ваш вихід, якщо пропустили оплату. Домашній день – інтернет на
+                          добу всього за 25 грн. Послуга активна до кінця наступної доби. Переїжджаєте на іншу адресу?
+                          Київстар збереже всі послуги.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tariffs__block block-fbga">
+                    <div class="tariffs__feature">
+                      <div class="tariffs__img"><img src="@img/tariffs/card.png" alt="Card" /></div>
                       <div class="tariffs__info">
                         <div class="tariffs__cost"><span>350</span> 200 грн/міс.</div>
                         <div class="tariffs__deadline">протягом перших 3 місяців</div>
@@ -93,7 +129,7 @@
                     </div>
                   </div>
                   <div class="tariffs__block">
-                    <a href="#" class="tariffs__btn">Обрати</a>
+                    <a data-popup="#house" href="#" class="tariffs__btn">Обрати</a>
                   </div>
                 </div>
               </div>
@@ -102,11 +138,7 @@
                 <div class="tariffs__item">
                   <div class="tariffs__block">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/tv.png" alt="TV" /></div>
-                      <div class="tariffs__text">Київстар ТБ</div>
-                    </div>
-                    <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/int.png" alt="TV" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
                       <div class="tariffs__texts">
                         <div class="tariffs__text">Домашній інтернет</div>
                         <div class="tariffs__text"><span>до</span> 100 Мбіт/с</div>
@@ -114,53 +146,58 @@
                       </div>
                     </div>
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/mob.png" alt="TV" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/tv.png" alt="TV" /></div>
+                      <div class="tariffs__text">Київстар ТБ</div>
+                    </div>
+                    <div class="tariffs__feature">
+                      <div class="tariffs__img"><img src="@img/tariffs/mob.png" alt="TV" /></div>
                       <div class="tariffs__texts">
                         <div class="tariffs__text">50 ГБ <span>мобільний інтернет</span></div>
                         <div class="tariffs__text"><span>до</span> 100 Мбіт/с</div>
                       </div>
                     </div>
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/phone.png" alt="TV" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/phone.png" alt="TV" /></div>
                       <div class="tariffs__texts">
                         <div class="tariffs__text">Безлім <span>дзвінки на Київстар</span></div>
                         <div class="tariffs__text">300 хв дзвінки на інші мобільні, міські та закордон</div>
                       </div>
                     </div>
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/sms.png" alt="sms" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/sms.png" alt="sms" /></div>
                       <div class="tariffs__text">300 <span>SMS</span></div>
                     </div>
                   </div>
                   <div class="tariffs__block">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img-power"><img src="img/tariffs/superpower.png" alt="superpower" /></div>
+                      <div class="tariffs__img-power"><img src="@img/tariffs/superpower.png" alt="superpower" /></div>
                       <div class="tariffs__text">
                         <div class="tariffs__power">
-                          <span>Гігабіт</span> <br />
-                          <span>Інтернет безлім</span> <br />
-                          <span>Дзвінки безлім</span> <br />
-                          <span>SMS безлім</span> <br />
-                          <span>Відео на ходу</span> <br />
-                          <span>SIM для роутера/планшета/другого телефона</span> <br />
-                          <span>Соц. мережі та месенджери</span> <br />
-                          <span>5 ГБ у роумінгу</span> <br />
+                          <a href="" class="tariffs__superpower">
+                            <span>Гігабіт</span>
+                            <div><img src="@img/tariffs/gigabit.png" alt="Гігабіт" /></div>
+                          </a>
+                          <a href="" class="tariffs__superpower">
+                            <span>Інтернет безлім</span>
+                            <div><img src="@img/tariffs/int.png" alt="Гігабіт" /></div>
+                          </a>
+                          <a href="" class="tariffs__superpower"> ... </a>
                         </div>
                         <div class="tariffs__subpower">1 суперсила на вибір без додаткової плати</div>
                       </div>
                     </div>
                   </div>
-                  <div class="tariffs__block">
+                  <div class="tariffs__block block-fbga">
                     <div class="tariffs__feature">
-                      <div class="tariffs__img"><img src="img/tariffs/card.png" alt="Card" /></div>
+                      <div class="tariffs__img"><img src="@img/tariffs/card.png" alt="Card" /></div>
                       <div class="tariffs__info">
-                        <div class="tariffs__cost"><span>200</span> 420 грн/міс.</div>
+                        <div class="tariffs__cost"><span>420</span> 200 грн/міс.</div>
                         <div class="tariffs__deadline">протягом перших 3 місяців</div>
                       </div>
                     </div>
                   </div>
                   <div class="tariffs__block">
-                    <a href="#" class="tariffs__btn">Обрати</a>
+                    <a href="#" data-popup="#nasnaga" class="tariffs__btn">Обрати</a>
                   </div>
                 </div>
               </div>
@@ -174,21 +211,43 @@
                       <div class="tariffs__item">
                         <div class="tariffs__block">
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/tv.png" alt="TV" /></div>
-                            <div class="tariffs__text">Київстар ТБ</div>
-                          </div>
-                          <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/int.png" alt="TV" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
                             <div class="tariffs__texts">
                               <div class="tariffs__text">Домашній інтернет</div>
                               <div class="tariffs__text"><span>до</span> 100 Мбіт/с</div>
                               <div class="tariffs__text">Безлім <span>трафік</span></div>
                             </div>
                           </div>
+                          <div class="tariffs__feature">
+                            <div class="tariffs__img"><img src="@img/tariffs/tv.png" alt="TV" /></div>
+                            <div class="tariffs__tv">
+                              <div class="tariffs__text">Київстар ТБ</div>
+                              <div class="tariffs__dop">
+                                18 000+ фільмів, серіалів, шоу та 380+ каналів. Дивіться будь-де на 5 пристроях
+                                одночасно, без плати за трафік на смартфоні. Контент від Universal, Disney, Paramount та
+                                інших.
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="tariffs__block">
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/card.png" alt="Card" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
+                            <div class="tariffs__texts">
+                              <div class="tariffs__text">Корисні функції</div>
+                              <div class="tariffs__subtext">
+                                Тиждень довіри від Київстар – ваш вихід, якщо пропустили оплату. Активуйте послугу та
+                                користуйтеся інтернетом, Київстар ТБ, дзвінками та 100 МБ мобільного інтернету щодня.
+                                Домашній день – інтернет на добу за 25 грн. Послуга активна до кінця наступної доби, щоб
+                                ви залишалися онлайн, коли треба. Переїжджаєте? Київстар збереже всі послуги. Будьте на
+                                зв’язку з Київстар!
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tariffs__block block-fbga">
+                          <div class="tariffs__feature">
+                            <div class="tariffs__img"><img src="@img/tariffs/card.png" alt="Card" /></div>
                             <div class="tariffs__info">
                               <div class="tariffs__cost"><span>200</span> 100 грн/міс.</div>
                               <div class="tariffs__deadline">протягом перших 6 місяців</div>
@@ -196,7 +255,7 @@
                           </div>
                         </div>
                         <div class="tariffs__block">
-                          <a href="#" class="tariffs__btn">Обрати</a>
+                          <a data-popup="#luck" href="#" class="tariffs__btn">Обрати</a>
                         </div>
                       </div>
                     </div>
@@ -207,7 +266,7 @@
                       <div class="tariffs__item">
                         <div class="tariffs__block">
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/int.png" alt="TV" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
                             <div class="tariffs__texts">
                               <div class="tariffs__text">Домашній інтернет</div>
                               <div class="tariffs__text"><span>до</span> 1 Гбіт/с</div>
@@ -218,17 +277,33 @@
                         <div class="tariffs__block">
                           <div class="tariffs__feature">
                             <div class="tariffs__img-power">
-                              <img src="img/tariffs/superpower.png" alt="superpower" />
+                              <img src="@img/tariffs/superpower.png" alt="superpower" />
                             </div>
                             <div class="tariffs__text">
                               <div class="tariffs__power">Київстар ТБ</div>
+                              <div class="tariffs__subtext-power">
+                                18 000+ фільмів, серіалів, шоу, мультфілмів та 380+ каналів. Дивіться будь-де на 5
+                                пристроях одночасно, без плати за трафік на смартфоні. Контент від Universal, Disney,
+                                Paramount та інших.
+                              </div>
                               <div class="tariffs__subpower">1 суперсила на вибір без додаткової плати</div>
                             </div>
                           </div>
-                        </div>
-                        <div class="tariffs__block">
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/card.png" alt="Card" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
+                            <div class="tariffs__texts">
+                              <div class="tariffs__text">Корисні функції</div>
+                              <div class="tariffs__subtext">
+                                Тиждень довіри від Київстар – ваш вихід, якщо пропустили оплату. Домашній день –
+                                інтернет на добу всього за 25 грн. Послуга активна до кінця наступної доби. Переїжджаєте
+                                на іншу адресу? Київстар збереже всі послуги.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tariffs__block block-fbga">
+                          <div class="tariffs__feature">
+                            <div class="tariffs__img"><img src="@img/tariffs/card.png" alt="Card" /></div>
                             <div class="tariffs__info">
                               <div class="tariffs__cost"><span>350</span> 200 грн/міс.</div>
                               <div class="tariffs__deadline">протягом перших 3 місяців</div>
@@ -236,7 +311,7 @@
                           </div>
                         </div>
                         <div class="tariffs__block">
-                          <a href="#" class="tariffs__btn">Обрати</a>
+                          <a data-popup="#house" href="#" class="tariffs__btn">Обрати</a>
                         </div>
                       </div>
                     </div>
@@ -247,11 +322,7 @@
                       <div class="tariffs__item">
                         <div class="tariffs__block">
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/tv.png" alt="TV" /></div>
-                            <div class="tariffs__text">Київстар ТБ</div>
-                          </div>
-                          <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/int.png" alt="TV" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/int.png" alt="TV" /></div>
                             <div class="tariffs__texts">
                               <div class="tariffs__text">Домашній інтернет</div>
                               <div class="tariffs__text"><span>до</span> 100 Мбіт/с</div>
@@ -259,55 +330,60 @@
                             </div>
                           </div>
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/mob.png" alt="TV" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/tv.png" alt="TV" /></div>
+                            <div class="tariffs__text">Київстар ТБ</div>
+                          </div>
+                          <div class="tariffs__feature">
+                            <div class="tariffs__img"><img src="@img/tariffs/mob.png" alt="TV" /></div>
                             <div class="tariffs__texts">
                               <div class="tariffs__text">50 ГБ <span>мобільний інтернет</span></div>
                               <div class="tariffs__text"><span>до</span> 100 Мбіт/с</div>
                             </div>
                           </div>
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/phone.png" alt="TV" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/phone.png" alt="TV" /></div>
                             <div class="tariffs__texts">
                               <div class="tariffs__text">Безлім <span>дзвінки на Київстар</span></div>
                               <div class="tariffs__text">300 хв дзвінки на інші мобільні, міські та закордон</div>
                             </div>
                           </div>
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/sms.png" alt="sms" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/sms.png" alt="sms" /></div>
                             <div class="tariffs__text">300 <span>SMS</span></div>
                           </div>
                         </div>
                         <div class="tariffs__block">
                           <div class="tariffs__feature">
                             <div class="tariffs__img-power">
-                              <img src="img/tariffs/superpower.png" alt="superpower" />
+                              <img src="@img/tariffs/superpower.png" alt="superpower" />
                             </div>
                             <div class="tariffs__text">
                               <div class="tariffs__power">
-                                <span>Гігабіт</span> <br />
-                                <span>Інтернет безлім</span> <br />
-                                <span>Дзвінки безлім</span> <br />
-                                <span>SMS безлім</span> <br />
-                                <span>Відео на ходу</span> <br />
-                                <span>SIM для роутера/планшета/другого телефона</span> <br />
-                                <span>Соц. мережі та месенджери</span> <br />
-                                <span>5 ГБ у роумінгу</span> <br />
+                                <a href="" class="tariffs__superpower">
+                                  <span>Гігабіт</span>
+                                  <div><img src="@img/tariffs/gigabit.png" alt="Гігабіт" /></div>
+                                </a>
+                                <a href="" class="tariffs__superpower">
+                                  <span>Інтернет безлім</span>
+                                  <div><img src="@img/tariffs/int.png" alt="Гігабіт" /></div>
+                                </a>
+                                <a href="" class="tariffs__superpower"> ... </a>
                               </div>
                               <div class="tariffs__subpower">1 суперсила на вибір без додаткової плати</div>
                             </div>
                           </div>
                         </div>
-                        <div class="tariffs__block">
+                        <div class="tariffs__block block-fbga">
                           <div class="tariffs__feature">
-                            <div class="tariffs__img"><img src="img/tariffs/card.png" alt="Card" /></div>
+                            <div class="tariffs__img"><img src="@img/tariffs/card.png" alt="Card" /></div>
                             <div class="tariffs__info">
-                              <div class="tariffs__cost"><span>200</span> 420 грн/міс.</div>
+                              <div class="tariffs__cost"><span>420</span> 200 грн/міс.</div>
                               <div class="tariffs__deadline">протягом перших 3 місяців</div>
                             </div>
                           </div>
                         </div>
                         <div class="tariffs__block">
-                          <a href="#" class="tariffs__btn">Обрати</a>
+                          <a href="#" data-popup="#nasnaga" class="tariffs__btn">Обрати</a>
                         </div>
                       </div>
                     </div>
@@ -316,17 +392,18 @@
                 <div class="swiper-pagination"></div>
                 <div class="swiper-buttons">
                   <button type="button" class="swiper-button-prev">
-                    <img src="img/tariffs/arr.png" alt="prev" />
+                    <img src="@img/tariffs/arr.png" alt="prev" />
                   </button>
                   <button type="button" class="swiper-button-next">
-                    <img src="img/tariffs/arr.png" alt="next" />
+                    <img src="@img/tariffs/arr.png" alt="next" />
                   </button>
                 </div>
               </div>
             </div>
             <div class="tariffs__images">
-              <div class="tariffs__banner"><img src="img/tariffs/house.png" alt="Дім" /></div>
-              <div class="tariffs__banner"><img src="img/tariffs/luck.png" alt="Удача" /></div>
+              <div class="tariffs__banner"><img src="@img/tariffs/house.png" alt="Дім" /></div>
+              <div class="tariffs__banner banner-last"><img src="@img/tariffs/luck.png" alt="Удача" /></div>
+              <div class="tariffs__banner-low"><img src="@img/tariffs/lowres.jpg" alt="дім" /></div>
             </div>
           </div>
         </div>
@@ -358,23 +435,163 @@
               </div>
               <button type="submit" class="form__button">Відправити</button>
             </form>
-            <div class="form__banner"><img src="img/form/banner.png" alt="banner" /></div>
+            <div class="form__banner"><img src="@img/form/banner.png" alt="banner" /></div>
+          </div>
+        </div>
+      </div>
+      <div id="luck" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <button data-close type="button" class="popup__close">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square" />
+                <path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square" />
+              </svg>
+            </button>
+            <div class="popup__text">
+              <form action="#" method="post" class="form__form">
+                <h1 class="form__title">Замовити підключення</h1>
+                <div class="form__item">
+                  <input
+                    type="tel"
+                    data-required
+                    name="form[tel]"
+                    placeholder="Номер телефону *"
+                    class="form__input input"
+                  />
+                </div>
+                <div class="form__item">
+                  <input
+                    type="text"
+                    data-required
+                    name="form[adress]"
+                    placeholder="Адреса *"
+                    class="form__input input"
+                  />
+                </div>
+                <div class="form__item">
+                  <input type="text" name="form[name]" data-required placeholder="Ім’я *" class="form__input input" />
+                </div>
+                <div class="form__item">
+                  <select class="select" name="form[tariff]" data-class-modif="form">
+                    <option value="1" selected>Удача</option>
+                    <option value="2">Дім</option>
+                    <option value="3">ВСЕ РАЗОМ Наснага</option>
+                  </select>
+                </div>
+                <button type="submit" class="form__button">Відправити</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="house" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <button data-close type="button" class="popup__close">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square" />
+                <path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square" />
+              </svg>
+            </button>
+            <div class="popup__text">
+              <form action="#" method="post" class="form__form">
+                <h1 class="form__title">Замовити підключення</h1>
+                <div class="form__item">
+                  <input
+                    type="tel"
+                    data-required
+                    name="form[tel]"
+                    placeholder="Номер телефону *"
+                    class="form__input input"
+                  />
+                </div>
+                <div class="form__item">
+                  <input
+                    type="text"
+                    data-required
+                    name="form[adress]"
+                    placeholder="Адреса *"
+                    class="form__input input"
+                  />
+                </div>
+                <div class="form__item">
+                  <input type="text" name="form[name]" data-required placeholder="Ім’я *" class="form__input input" />
+                </div>
+                <div class="form__item">
+                  <select class="select" name="form[tariff]" data-class-modif="form">
+                    <option value="1" selected>Дім</option>
+                    <option value="2">Удача</option>
+                    <option value="3">ВСЕ РАЗОМ Наснага</option>
+                  </select>
+                </div>
+                <button type="submit" class="form__button">Відправити</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="nasnaga" aria-hidden="true" class="popup">
+        <div class="popup__wrapper">
+          <div class="popup__content">
+            <button data-close type="button" class="popup__close">
+              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="1" d="M1.73333 1.48883L21.5469 21.0288" stroke="#fff" stroke-linecap="square" />
+                <path opacity="1" d="M21.2667 1.48883L1.45309 21.0288" stroke="#fff" stroke-linecap="square" />
+              </svg>
+            </button>
+            <div class="popup__text">
+              <form action="#" method="post" class="form__form">
+                <h1 class="form__title">Замовити підключення</h1>
+                <div class="form__item">
+                  <input
+                    type="tel"
+                    data-required
+                    name="form[tel]"
+                    placeholder="Номер телефону *"
+                    class="form__input input"
+                  />
+                </div>
+                <div class="form__item">
+                  <input
+                    type="text"
+                    data-required
+                    name="form[adress]"
+                    placeholder="Адреса *"
+                    class="form__input input"
+                  />
+                </div>
+                <div class="form__item">
+                  <input type="text" name="form[name]" data-required placeholder="Ім’я *" class="form__input input" />
+                </div>
+                <div class="form__item">
+                  <select class="select" name="form[tariff]" data-class-modif="form">
+                    <option value="1" selected>ВСЕ РАЗОМ Наснага</option>
+                    <option value="2">Удача</option>
+                    <option value="3">Дім</option>
+                  </select>
+                </div>
+                <button type="submit" class="form__button">Відправити</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
       <footer class="footer">
         <div class="footer__container">
           <div class="footer__social">
-            <a href="#" class="footer__link"><img src="img/footer/tg.png" alt="Телеграм" /></a>
-            <a href="#" class="footer__link"><img src="img/footer/vb.png" alt="Вайбер" /></a>
-            <a href="#" class="footer__link"><img src="img/footer/fb.png" alt="Фейсбук" /></a>
-            <a href="#" class="footer__link"><img src="img/footer/wp.png" alt="Вотсап" /></a>
+            <a href="#" class="footer__link"><img src="@img/footer/tg.png" alt="Телеграм" /></a>
+            <a href="#" class="footer__link"><img src="@img/footer/vb.png" alt="Вайбер" /></a>
+            <a href="#" class="footer__link"><img src="@img/footer/fb.png" alt="Фейсбук" /></a>
+            <a href="#" class="footer__link"><img src="@img/footer/wp.png" alt="Вотсап" /></a>
           </div>
           <div class="footer__lic">Офіційний представник Київстар</div>
           <a href="tel:+380000000000" class="footer__tel">+380 00 000 0000</a>
         </div>
       </footer>
     </div>
-    <script src="js/app.min.js?_v=20250120191430"></script>
+    <script src="js/app.min.js?_v=20250124113126"></script>
   </body>
 </html>
