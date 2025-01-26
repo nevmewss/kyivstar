@@ -482,7 +482,7 @@ body::after {
     flex-direction: column
   }
 }
-@media(max-width:29.99875em) {
+@media(max-width:47.99875em) {
   .tariffs__container {
     gap: 1.25rem
   }
@@ -893,6 +893,33 @@ body::after {
 }
 .tariffs__message span {
   font-weight: 700
+}
+@media(max-width:47.99875em) {
+  .tariffs__message {
+    display: none
+  }
+}
+.tariffs__message-mob {
+  padding: .9375rem 1.25rem;
+  max-width: 18.75rem;
+  text-align: center;
+  margin: 0 auto;
+  font-size: .875rem
+}
+@media(max-width:47.99875em) {
+  .tariffs__message-mob {
+    display: block
+  }
+}
+@media(min-width:47.99875em) {
+  .tariffs__message-mob {
+    display: none
+  }
+}
+@media(max-width:29.99875em) {
+  .tariffs__message-mob {
+    padding: .625rem
+  }
 }
 .swiper {
   overflow: hidden
