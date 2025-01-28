@@ -652,13 +652,24 @@ body::after {
   }
 }
 @media (max-width:400px) {
+  .tariffs__title {
+    max-width: 18.75rem
+  }
   .tariffs__item {
+    max-width: 18.75rem
+  }
+  .tariffs__message-mob {
     max-width: 18.75rem
   }
 }
 @media (max-width:380px) {
   .swiper-buttons {
     top: 2.5rem
+  }
+}
+@media (max-width:350px) {
+  .tariffs__item {
+    max-width: 18.125rem
   }
 }
 @media (max-width:20em) {
@@ -675,7 +686,7 @@ body::after {
     font-size: 1.25rem
   }
   .tariffs {
-    margin-bottom: 3.125rem
+    margin-bottom: .625rem
   }
   .tariffs__title {
     font-size: 1rem
@@ -717,7 +728,7 @@ body::after {
     display: none
   }
   .tariffs__title {
-    max-width: 18.75rem;
+    max-width: 21.875rem;
     margin: 0 auto;
     margin-bottom: 1.5rem
   }
@@ -768,13 +779,19 @@ body::after {
   .tariffs__message-mob {
     display: block
   }
+  .tariffs__message-mob {
+    max-width: 21.875rem
+  }
 }
 @media (max-width:29.99875em) {
   .tariffs__title {
     padding: .625rem 1.875rem
   }
+  .tariffs__title {
+    max-width: 21.25rem
+  }
   .tariffs__item {
-    max-width: 21.875rem
+    max-width: 21.25rem
   }
   .tariffs__power {
     flex-direction: column
@@ -784,6 +801,9 @@ body::after {
   }
   .tariffs__message-mob {
     padding: .625rem
+  }
+  .tariffs__message-mob {
+    max-width: 21.25rem
   }
 }
 @media (min-width:20em)and (max-width:93.125em) {
@@ -827,14 +847,14 @@ body::after {
       font-size: calc(1.25rem + .125*(100vw - 20rem)/ 73.125)
     }
   }
-  @supports (margin-bottom:clamp(3.125rem ,2.2702991453rem + 4.2735042735vw ,6.25rem)) {
+  @supports (margin-bottom:clamp(0.625rem ,-0.9134615385rem + 7.6923076923vw ,6.25rem)) {
     .tariffs {
-      margin-bottom: clamp(3.125rem ,2.2702991453rem + 4.2735042735vw ,6.25rem)
+      margin-bottom: clamp(.625rem ,-.9134615385rem + 7.6923076923vw ,6.25rem)
     }
   }
-  @supports not (margin-bottom:clamp(3.125rem ,2.2702991453rem + 4.2735042735vw ,6.25rem)) {
+  @supports not (margin-bottom:clamp(0.625rem ,-0.9134615385rem + 7.6923076923vw ,6.25rem)) {
     .tariffs {
-      margin-bottom: calc(3.125rem + 3.125*(100vw - 20rem)/ 73.125)
+      margin-bottom: calc(.625rem + 5.625*(100vw - 20rem)/ 73.125)
     }
   }
   @supports (font-size:clamp(1rem ,0.9658119658rem + 0.1709401709vw ,1.125rem)) {
