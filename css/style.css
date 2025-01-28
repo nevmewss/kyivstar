@@ -371,6 +371,11 @@ body::after {
 .header__logo img {
   max-width: 100%
 }
+@media(max-width:47.99875em) {
+  .header__logo img {
+    width: 15.625rem
+  }
+}
 .footer {
   border-top: 1px solid #cee800
 }
@@ -571,8 +576,15 @@ body::after {
 @media(max-width:47.99875em) {
   .tariffs__item {
     padding: .9375rem;
-    max-width: 18.75rem;
-    margin: 0 auto
+    padding-top: 1.875rem;
+    margin: 0 auto;
+    width: 21.875rem;
+    max-width: 100%
+  }
+}
+@media(max-width:29.99875em) {
+  .tariffs__item {
+    max-width: 21.875rem
   }
 }
 @media(max-width:em(400)) {
@@ -671,9 +683,17 @@ body::after {
   margin-bottom: .625rem;
   display: flex;
   gap: .625rem;
-  flex-wrap: wrap;
-  flex-direction: column;
   align-items: start
+}
+@media(min-width:47.99875em) {
+  .tariffs__power {
+    flex-direction: column
+  }
+}
+@media(max-width:29.99875em) {
+  .tariffs__power {
+    flex-direction: column
+  }
 }
 .tariffs__subpower {
   font-weight: 700
@@ -854,9 +874,19 @@ body::after {
   justify-content: center;
   align-items: start;
   gap: .3125rem;
-  padding: .625rem;
+  padding: .3125rem;
   padding-bottom: .3125rem;
   transition: all .3s
+}
+@media(max-width:29.99875em) {
+  .tariffs__superpower {
+    padding: .3125rem
+  }
+}
+@media(min-width:47.99875em) {
+  .tariffs__superpower {
+    padding: .625rem
+  }
 }
 .tariffs__superpower:nth-child(2) span {
   padding-top: .125rem
