@@ -652,11 +652,28 @@ body::after {
   }
 }
 @media (max-width:400px) {
+  .header__tel {
+    max-width: 18.75rem
+  }
+  .header__logo img {
+    max-width: 18.75rem
+  }
   .tariffs__title {
     max-width: 18.75rem
   }
   .tariffs__item {
     max-width: 18.75rem
+  }
+  .tariffs__banner img {
+    max-width: 18.75rem
+  }
+  .form__form {
+    max-width: 18.75rem;
+    margin: 0 auto
+  }
+  .form__banner img {
+    max-width: 18.75rem;
+    margin: 0 auto
   }
   .tariffs__message-mob {
     max-width: 18.75rem
@@ -757,8 +774,11 @@ body::after {
   }
 }
 @media (max-width:47.99875em) {
+  .header__tel {
+    max-width: 21.875rem
+  }
   .header__logo img {
-    width: 15.625rem
+    max-width: 21.875rem
   }
   .tariffs__container {
     gap: 1.25rem
@@ -769,6 +789,17 @@ body::after {
     margin: 0 auto;
     width: 21.875rem;
     max-width: 100%
+  }
+  .tariffs__banner img {
+    max-width: 21.875rem
+  }
+  .form__form {
+    max-width: 21.875rem;
+    margin: 0 auto
+  }
+  .form__banner img {
+    max-width: 21.875rem;
+    margin: 0 auto
   }
   .banner-last {
     display: none
@@ -784,6 +815,12 @@ body::after {
   }
 }
 @media (max-width:29.99875em) {
+  .header__tel {
+    max-width: 21.25rem
+  }
+  .header__logo img {
+    max-width: 21.25rem
+  }
   .tariffs__title {
     padding: .625rem 1.875rem
   }
@@ -795,6 +832,17 @@ body::after {
   }
   .tariffs__power {
     flex-direction: column
+  }
+  .tariffs__banner img {
+    max-width: 21.25rem
+  }
+  .form__form {
+    max-width: 21.25rem;
+    margin: 0 auto
+  }
+  .form__banner img {
+    max-width: 21.25rem;
+    margin: 0 auto
   }
   .tariffs__superpower {
     padding: .3125rem
