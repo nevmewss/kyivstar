@@ -230,8 +230,7 @@ body::after {
   position: relative
 }
 .header {
-  color: #fff;
-  margin-bottom: 2.3125rem
+  color: #fff
 }
 .header__container {
   display: flex;
@@ -298,7 +297,7 @@ body::after {
   gap: 3.4375rem
 }
 .tariffs__title {
-  background-color: #cee800;
+  background-color: #fff;
   font-weight: 700;
   padding: .625rem 1.25rem;
   margin-bottom: 1.5rem;
@@ -512,18 +511,17 @@ body::after {
   background-color: #cee800;
   padding: .625rem;
   text-align: center;
-  font-size: 1.25rem;
-  border-radius: 30px
+  border-radius: 30px;
+  font-weight: 700
 }
 .tariffs__message span {
   font-weight: 700
 }
 .tariffs__message-mob {
-  padding: .9375rem 1.25rem;
+  padding: .625rem .625rem;
   max-width: 18.75rem;
   text-align: center;
-  margin: 0 auto;
-  font-size: .875rem
+  margin: 0 auto
 }
 .swiper {
   overflow: hidden
@@ -572,6 +570,9 @@ body::after {
   }
 }
 @media (min-width:93.125em) {
+  .header {
+    margin-bottom: 2.3125rem
+  }
   .header__container {
     padding-top: 5.0625rem
   }
@@ -588,6 +589,12 @@ body::after {
     margin-bottom: 6.25rem
   }
   .tariffs__title {
+    font-size: 1.125rem
+  }
+  .tariffs__message {
+    font-size: 1.125rem
+  }
+  .tariffs__message-mob {
     font-size: 1.125rem
   }
 }
@@ -686,7 +693,15 @@ body::after {
     max-width: 18.125rem
   }
 }
+@media (max-width:330px) {
+  .form__form {
+    padding: 0 .9375rem
+  }
+}
 @media (max-width:20em) {
+  .header {
+    margin-bottom: .9375rem
+  }
   .header__container {
     padding-top: 1.625rem
   }
@@ -703,6 +718,12 @@ body::after {
     margin-bottom: .625rem
   }
   .tariffs__title {
+    font-size: 1rem
+  }
+  .tariffs__message {
+    font-size: 1rem
+  }
+  .tariffs__message-mob {
     font-size: 1rem
   }
 }
@@ -846,6 +867,16 @@ body::after {
   }
 }
 @media (min-width:20em)and (max-width:93.125em) {
+  @supports (margin-bottom:clamp(0.9375rem ,0.5614316239rem + 1.8803418803vw ,2.3125rem)) {
+    .header {
+      margin-bottom: clamp(.9375rem ,.5614316239rem + 1.8803418803vw ,2.3125rem)
+    }
+  }
+  @supports not (margin-bottom:clamp(0.9375rem ,0.5614316239rem + 1.8803418803vw ,2.3125rem)) {
+    .header {
+      margin-bottom: calc(.9375rem + 1.375*(100vw - 20rem)/ 73.125)
+    }
+  }
   @supports (padding-top:clamp(1.625rem ,0.6848290598rem + 4.7008547009vw ,5.0625rem)) {
     .header__container {
       padding-top: clamp(1.625rem ,.6848290598rem + 4.7008547009vw ,5.0625rem)
@@ -903,6 +934,26 @@ body::after {
   }
   @supports not (font-size:clamp(1rem ,0.9658119658rem + 0.1709401709vw ,1.125rem)) {
     .tariffs__title {
+      font-size: calc(1rem + .125*(100vw - 20rem)/ 73.125)
+    }
+  }
+  @supports (font-size:clamp(1rem ,0.9658119658rem + 0.1709401709vw ,1.125rem)) {
+    .tariffs__message {
+      font-size: clamp(1rem ,.9658119658rem + .1709401709vw ,1.125rem)
+    }
+  }
+  @supports not (font-size:clamp(1rem ,0.9658119658rem + 0.1709401709vw ,1.125rem)) {
+    .tariffs__message {
+      font-size: calc(1rem + .125*(100vw - 20rem)/ 73.125)
+    }
+  }
+  @supports (font-size:clamp(1rem ,0.9658119658rem + 0.1709401709vw ,1.125rem)) {
+    .tariffs__message-mob {
+      font-size: clamp(1rem ,.9658119658rem + .1709401709vw ,1.125rem)
+    }
+  }
+  @supports not (font-size:clamp(1rem ,0.9658119658rem + 0.1709401709vw ,1.125rem)) {
+    .tariffs__message-mob {
       font-size: calc(1rem + .125*(100vw - 20rem)/ 73.125)
     }
   }
